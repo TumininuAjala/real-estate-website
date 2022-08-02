@@ -3,6 +3,7 @@ import styled, {css} from 'styled-components/macro';
 import {Link } from 'react-router-dom'
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import {FaBars} from 'react-icons/fa'
 
 const Nav = styled.nav`
    height:60px;
@@ -12,7 +13,7 @@ const Nav = styled.nav`
    z-index:100;
    position:fixed;
    width:100%;
-   background:#000;
+   background:red;
 
 `;
 
@@ -30,11 +31,29 @@ const Logo = styled(Link)`
    font-style: italic;
 `;
 
-const MenuBars = styled.i``;
+const MenuBars = styled(FaBars)`
+     display:none;
+
+     @media screen and (max-width:768px){
+      display:block;
+      cursor:pointer;
+      position:absolute;
+      width:40px;
+      height:40px;
+      top:0;
+      right:0;
+      transform:translate(-50%,25%);
+     }
+`;
 
 const NavMenu = styled.div`
   display:flex;
   align-items:center;
+  margin-right:-48px;
+
+  @media screen and (max-width: 768px){
+    display:none;
+  }
 `;
 
 const NavMenuLinks = styled(Link)`
@@ -45,6 +64,11 @@ const NavBtn = styled.div`
     display:flex;
     align-items:center;
     margin-right:24px;
+
+    @media screen and (max-width: 768px){
+      display:none;
+     
+    }
 `;
 
 const Navbar = () => {
@@ -60,7 +84,7 @@ const Navbar = () => {
           ))}
         </NavMenu>
         <NavBtn>
-          <Button to='/contact'>
+          <Button to='/contact' primary='true'>
             Contact Us
             </Button>
         </NavBtn>
