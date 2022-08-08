@@ -9,7 +9,7 @@ function App() {
   {/* <h1>Hi</h1> */}
   <GlobalStyle/>
   <Navbar/>
-   <Hero/>
+   <Hero slides={SliderData}/>
    </>
   );
 }
