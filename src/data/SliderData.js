@@ -38,30 +38,30 @@ export const SliderData =[
         alt:'House'
     },
 ];
-export const SliderDataTwo =[
-    {
-        title:'Luxury Villa in Bali,Indonesia',
-        price: '$4,200,000',
-        path:'/homes',
-        label:'View Home',
-        image: ImageFive,
-        alt:'House'
-    },
-    {
-        title:'Luxury Villa in Bali,Indonesia',
-        price: '$4,200,000',
-        path:'/homes',
-        label:'View Home',
-        image: ImageSix,
-        alt:'House'
-    },
-    {
-        title:'Luxury Villa in Bali,Indonesia',
-        price: '$4,200,000',
-        path:'/homes',
-        label:'View Home',
-        image: ImageSeven,
-        alt:'House'
-    },
+// export const SliderDataTwo =[
+//     {
+//         title:'Luxury Villa in Bali,Indonesia',
+//         price: '$4,200,000',
+//         path:'/homes',
+//         label:'View Home',
+//         image: ImageFive,
+//         alt:'House'
+//     },
+//     {
+//         title:'Luxury Villa in Bali,Indonesia',
+//         price: '$4,200,000',
+//         path:'/homes',
+//         label:'View Home',
+//         image: ImageSix,
+//         alt:'House'
+//     },
+//     {
+//         title:'Luxury Villa in Bali,Indonesia',
+//         price: '$4,200,000',
+//         path:'/homes',
+//         label:'View Home',
+//         image: ImageSeven,
+//         alt:'House'
+//     },
 
-];
+// ];

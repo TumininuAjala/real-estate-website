@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components/macro';
 import {Link } from 'react-router-dom'
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
-import {FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa';
 
 const Nav = styled.nav`
    height:60px;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
    z-index:100;
    position:fixed;
    width:100%;
-   background:red;
+   
 
 `;
 
@@ -71,11 +71,11 @@ const NavBtn = styled.div`
     }
 `;
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <Nav>
         <Logo to="/">ELIXR</Logo>
-        <MenuBars/>
+        <MenuBars onClick={toggle}/>
         <NavMenu>
           {menuData.map((item,index) =>(
               <NavMenuLinks to={item.link} key={index} >
