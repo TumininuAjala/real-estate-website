@@ -130,22 +130,22 @@ const Hero = ({ slides }) => {
   const timeout = useRef(null);
 
 
-// useEffect(() => {
-//    const nextSlide=()=>{
-//     setCurrent(current => (current === length-1 ? 0 : current +1))
-//    }
+useEffect(() => {
+   const nextSlide=()=>{
+    setCurrent(current => (current === length-1 ? 0 : current +1))
+   }
 
-//    timeout.current = setTimeout(nextSlide, 2000)
+   timeout.current = setTimeout(nextSlide, 2000)
 
-//    return function(){
-//     if (timeout.current){
-//       clearTimeout(timeout.current);
-//     }
-//    }
+   return function(){
+    if (timeout.current){
+      clearTimeout(timeout.current);
+    }
+   }
 
-// },[current,length]
+},[current,length]
 
-// );
+);
 
 
 
